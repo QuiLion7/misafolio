@@ -8,8 +8,8 @@ import Work from "@/components/work";
 
 export default function Home() {
   return (
-    <div className="bg-[url('/assets/site-bg.jpg')] bg-cover bg-center bg-no-repeat">
-      <div className="3xl:container w-full px-2">
+    <div className="w-full bg-[url('/assets/site-bg.jpg')] bg-cover bg-center bg-no-repeat">
+      <div className="container flex w-full flex-col items-center justify-center px-2">
         <Banner />
         <Nav />
         <About />
@@ -17,7 +17,7 @@ export default function Home() {
         <Work />
         <Mentoring />
         <Contact />
-        <div className="h-[4000px]"></div>
+        <div className="h-[3000px]"></div>
       </div>
     </div>
   );
