@@ -100,7 +100,8 @@ export default function Banner() {
                   width={0}
                   height={0}
                   sizes="auto"
-                  className="h-auto max-h-[300px] min-h-[200px] w-full rounded-xl bg-primary"
+                  className=" h-[250px] w-full rounded-xl bg-primary p-1 md:h-[300px]"
+                  style={{ objectFit: "contain" }}
                   alt="Picture of the author"
                 />
                 <p className="absolute bottom-1 text-xs opacity-0 duration-300 group-hover:opacity-100">
