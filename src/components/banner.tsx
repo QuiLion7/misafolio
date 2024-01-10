@@ -21,10 +21,22 @@ export default function Banner() {
           <div className="flex w-full flex-col gap-2 sm:flex-row">
             <div className="flex w-full flex-col items-center justify-center gap-1">
               <div className="w-auto text-center">
-                <h1 className="text-4xl font-bold md:text-5xl lg:text-7xl">
+                <motion.h1
+                  variants={fadeIn("up", 0.3)}
+                  initial="hidden"
+                  whileInView={"show"}
+                  viewport={{ once: false, amount: 0.7 }}
+                  className="text-4xl font-bold md:text-5xl lg:text-7xl"
+                >
                   MISAEL <span>LIMA</span>
-                </h1>
-                <div className="flex items-center justify-center gap-[6px] text-2xl font-bold uppercase leading-[1] sm:justify-center md:text-3xl lg:text-5xl">
+                </motion.h1>
+                <motion.div
+                  variants={fadeIn("up", 0.4)}
+                  initial="hidden"
+                  whileInView={"show"}
+                  viewport={{ once: false, amount: 0.7 }}
+                  className="flex items-center justify-center gap-[6px] text-2xl font-bold uppercase leading-[1] sm:justify-center md:text-3xl lg:text-5xl"
+                >
                   <span>Eu sou</span>
                   <TypeAnimation
                     sequence={[
@@ -40,23 +52,48 @@ export default function Banner() {
                     wrapper="span"
                     repeat={Infinity}
                   />
-                </div>
-                <p className="my-4 max-w-[500px] text-justify text-sm font-normal leading-loose ">
+                </motion.div>
+                <motion.p
+                  variants={fadeIn("up", 0.5)}
+                  initial="hidden"
+                  whileInView={"show"}
+                  viewport={{ once: false, amount: 0.7 }}
+                  className="my-4 max-w-[500px] text-justify text-sm font-normal leading-loose "
+                >
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
+                </motion.p>
               </div>
-              <Button
-                asChild
-                className="my-1 cursor-pointer rounded-xl font-bold uppercase text-white duration-300"
+              <motion.div
+                variants={fadeIn("up", 0.6)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.7 }}
               >
-                <Link to="contact" smooth={true} spy={true}>
-                  Entre em Contato
-                </Link>
-              </Button>
-              <Networks />
+                <Button
+                  asChild
+                  className="cursor-pointer rounded-xl bg-gradient-to-r from-purple-900 via-purple-600 to-violet-600 font-bold uppercase text-white duration-300"
+                >
+                  <Link to="contact" smooth={true} spy={true}>
+                    Entre em Contato
+                  </Link>
+                </Button>
+              </motion.div>
+              <motion.div
+                variants={fadeIn("up", 0.7)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.7 }}
+              >
+                <Networks />
+              </motion.div>
             </div>
-            <div className="order-first flex h-auto w-full items-center justify-center sm:order-last">
+            <motion.div
+              variants={fadeIn("down", 0.5)}
+              initial="hidden"
+              whileInView={"show"}
+              className="order-first flex h-auto w-full items-center justify-center sm:order-last"
+            >
               <div className="group relative flex h-full items-center justify-center rounded-xl duration-300 hover:bg-background/30">
                 <Image
                   src="/assets/perfil.png"
@@ -70,7 +107,7 @@ export default function Banner() {
                   @sharkbreakout
                 </p>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
