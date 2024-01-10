@@ -3,7 +3,7 @@ import { FaTiktok, FaInstagram, FaYoutube } from "react-icons/fa";
 
 export default function Networks() {
   return (
-    <div className="flex items-center justify-center gap-1">
+    <div className="mt-2 flex items-center justify-center gap-1">
       <Link
         href="https://www.instagram.com/sharkbreakout"
         target="_blank"
