@@ -8,7 +8,7 @@ import Work from "@/components/work";
 
 export default function Home() {
   return (
-    <div className="w-full bg-[url('/assets/site-bg.jpg')] bg-cover bg-center bg-no-repeat">
+    <div className="w-full overflow-y-hidden bg-[url('/assets/site-bg.jpg')] bg-cover bg-center bg-no-repeat">
       <div className="container flex w-full flex-col items-center justify-center px-2">
         <Banner />
         <Nav />
