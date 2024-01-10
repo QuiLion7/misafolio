@@ -23,7 +23,7 @@ const Nav = () => {
   return (
     <nav className="fixed bottom-2 z-50 flex w-full items-center justify-center overflow-hidden px-2 lg:bottom-8">
       <div className="flex w-full items-center justify-center">
-        <div className=" flex h-full max-h-[80px] w-full max-w-[420px] items-center justify-between rounded-full  bg-background/40 p-1 text-2xl backdrop-blur-2xl lg:px-5">
+        <div className=" flex h-full max-h-[80px] w-full max-w-[420px] items-center justify-between rounded-full bg-background/40 p-1 px-3 text-2xl backdrop-blur-2xl lg:px-5">
           {navigationLinks.map((link, index) => {
             return (
               <Link
