@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className="flex h-[50px] w-full items-center justify-between">
+    <header className="absolute top-0 flex h-[50px] w-full items-center justify-between">
       <div className="flex items-center justify-between">
         {/* <Image
             src="/assets/shark-avatar.png"
