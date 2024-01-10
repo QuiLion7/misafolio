@@ -21,9 +21,9 @@ const navigationLinks = [
 
 const Nav = () => {
   return (
-    <nav className="fixed bottom-2 z-50 w-full overflow-hidden lg:bottom-8">
-      <div className="container mx-auto">
-        <div className="mx-auto flex h-[80px] w-full max-w-[420px] items-center justify-between rounded-full bg-background/40 px-5 text-2xl backdrop-blur-2xl">
+    <nav className="fixed bottom-2 z-50 flex w-full items-center justify-center overflow-hidden px-2 lg:bottom-8">
+      <div className="flex w-full items-center justify-center">
+        <div className=" flex h-full max-h-[80px] w-full max-w-[420px] items-center justify-between rounded-full  bg-background/40 p-1 text-2xl backdrop-blur-2xl lg:px-5">
           {navigationLinks.map((link, index) => {
             return (
               <Link
@@ -32,7 +32,7 @@ const Nav = () => {
                 activeClass="bg-secondary text-primary group"
                 smooth={true}
                 spy={true}
-                className="group flex h-[60px] w-[60px] cursor-pointer items-center justify-center rounded-full p-4 duration-300 hover:bg-secondary"
+                className="group flex h-[50px] w-[50px] cursor-pointer items-center justify-center rounded-full p-4 duration-300 hover:bg-secondary sm:h-[60px] sm:w-[60px]"
               >
                 <link.icon
                   size={0}
