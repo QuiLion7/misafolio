@@ -76,7 +76,7 @@ export default function Contact() {
     >
       <div className="flex h-full w-full flex-col items-center justify-center gap-2 md:flex-row">
         <div className="flex h-[300px] w-full flex-col items-center justify-end pb-8 sm:h-[350px] sm:justify-center md:h-full md:flex-1">
-          <div className="flex w-full max-w-[500px] flex-col items-center justify-center gap-1 md:gap-4">
+          <div className="flex w-full max-w-[500px] flex-col items-center justify-center gap-1 md:gap-2">
             <motion.h3
               variants={fadeIn("right", 0.3)}
               initial="hidden"
@@ -93,7 +93,7 @@ export default function Contact() {
               viewport={{ once: false, amount: 0.7 }}
               className="flex-col text-center text-3xl font-bold uppercase md:text-4xl lg:text-5xl"
             >
-              <h1>Vamos estudar </h1>
+              <h1 className="mb-[8px]">Vamos estudar </h1>
               <TypeAnimation
                 sequence={["Juntos!", 2000, "Forex!", 2000]}
                 speed={50}
