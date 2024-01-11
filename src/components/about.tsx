@@ -90,7 +90,7 @@ export default function About() {
             >
               <Button
                 asChild
-                className="cursor-pointer rounded-xl bg-gradient-to-r from-purple-900 via-purple-600 to-violet-600 font-bold uppercase text-white duration-300"
+                className="w-full max-w-[250px] cursor-pointer rounded-xl bg-gradient-to-r from-purple-900 via-purple-600 to-violet-600 font-bold uppercase text-white"
               >
                 <Link to="contact" smooth={true} spy={true}>
                   Entre em Contato
