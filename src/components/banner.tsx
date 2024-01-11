@@ -69,10 +69,11 @@ export default function Banner() {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.7 }}
+                className="flex w-full items-center justify-center"
               >
                 <Button
                   asChild
-                  className="cursor-pointer rounded-xl bg-gradient-to-r from-purple-900 via-purple-600 to-violet-600 font-bold uppercase text-white duration-300"
+                  className="w-full max-w-[250px] cursor-pointer rounded-xl bg-gradient-to-r from-purple-900 via-purple-600 to-violet-600 font-bold uppercase text-white duration-300"
                 >
                   <Link to="contact" smooth={true} spy={true}>
                     Entre em Contato
