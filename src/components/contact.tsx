@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "@/utils/variants";
 import { TypeAnimation } from "react-type-animation";
+import { FaWhatsapp, FaDiscord } from "react-icons/fa";
 
 import * as z from "zod";
 import {
@@ -18,6 +19,7 @@ import { useForm } from "react-hook-form";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 const profileFormSchema = z.object({
   name: z
@@ -73,7 +75,7 @@ export default function Contact() {
       className="flex h-svh w-full flex-col items-center justify-center"
     >
       <div className="flex h-full w-full flex-col items-center justify-center gap-2 md:flex-row">
-        <div className="flex h-[250px] w-full flex-col items-center justify-end pb-8 sm:h-[350px] sm:justify-center md:h-full md:flex-1">
+        <div className="flex h-[300px] w-full flex-col items-center justify-end pb-8 sm:h-[350px] sm:justify-center md:h-full md:flex-1">
           <div className="flex w-full max-w-[500px] flex-col items-center justify-center gap-1 md:gap-4">
             <motion.h3
               variants={fadeIn("right", 0.3)}
@@ -99,6 +101,34 @@ export default function Contact() {
                 wrapper="span"
                 repeat={Infinity}
               />
+            </motion.div>
+            <motion.div
+              variants={fadeIn("right", 0.5)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+              className="flex items-center justify-center gap-2 p-2"
+            >
+              <Link
+                href="https://discord.gg/EDKyJ29jUQ"
+                target="_blank"
+                className="group relative h-auto w-[40px] rounded-full bg-background/30 p-2 hover:bg-background/100 md:w-[50px]"
+              >
+                <FaDiscord className="h-auto w-full" />
+                <span className="absolute bottom-0 right-[53px] w-auto rounded-xl bg-background p-2 text-center text-xs uppercase opacity-0 duration-300 group-hover:opacity-100">
+                  GRUPO NO WHATSAPP
+                </span>
+              </Link>
+              <Link
+                href="https://chat.whatsapp.com/Gn3zIQvOAVhCKdfRN0iiei"
+                target="_blank"
+                className="group relative h-auto w-[40px] rounded-full bg-background/30 p-2 hover:bg-background/100 md:w-[50px]"
+              >
+                <FaWhatsapp className="h-auto w-full" />
+                <span className="absolute bottom-0 left-[53px] w-auto rounded-xl bg-background p-2 text-center text-xs uppercase opacity-0 duration-300 group-hover:opacity-100">
+                  GRUPO NO WHATSAPP
+                </span>
+              </Link>
             </motion.div>
           </div>
         </div>
