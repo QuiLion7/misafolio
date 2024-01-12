@@ -33,7 +33,7 @@ export default function About() {
               width={0}
               height={0}
               sizes="100%"
-              className="h-ful w-[300px] md:w-[400px]"
+              className="h-full w-[300px] md:w-full"
               style={{ objectFit: "cover" }}
               alt="Picture of the author"
             />
