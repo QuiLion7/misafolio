@@ -199,7 +199,7 @@ export default function Contact() {
               <div className="flex w-full items-center justify-center">
                 <Button
                   type="submit"
-                  className="w-full max-w-[250px] cursor-pointer rounded-xl bg-gradient-to-r from-purple-900 via-purple-600 to-violet-600 font-bold uppercase text-white"
+                  className="w-full max-w-[200px] cursor-pointer rounded-xl bg-gradient-to-r from-purple-900 via-purple-600 to-violet-600 font-bold uppercase text-white hover:from-violet-900 hover:to-purple-600"
                 >
                   Enviar
                 </Button>
