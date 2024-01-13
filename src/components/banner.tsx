@@ -13,7 +13,7 @@ export default function Banner() {
   return (
     <div
       id="home"
-      className=" relative flex h-svh w-full flex-col items-center justify-center"
+      className=" relative flex min-h-svh w-full flex-col items-center justify-center"
     >
       <Header />
       <section className="flex w-full items-center">
@@ -73,7 +73,7 @@ export default function Banner() {
               >
                 <Button
                   asChild
-                  className="w-full max-w-[250px] cursor-pointer rounded-xl bg-gradient-to-r from-purple-900 via-purple-600 to-violet-600 font-bold uppercase text-white duration-300"
+                  className="w-full max-w-[200px] cursor-pointer rounded-xl bg-gradient-to-r from-purple-900 via-purple-600 to-violet-600 font-bold uppercase text-white duration-300 hover:from-violet-900 hover:to-purple-600"
                 >
                   <Link to="contact" smooth={true} spy={true}>
                     Entre em Contato
