@@ -16,39 +16,29 @@ export default function About() {
   return (
     <section
       id="about"
-      className="flex h-svh w-full flex-col items-center justify-center"
+      className="flex min-h-svh w-full flex-col items-center justify-start sm:justify-center"
       ref={ref}
     >
-      <div className="flex h-full w-full items-center">
-        <div className="flex h-full w-full flex-col items-center justify-center gap-3 md:flex-row">
+      <div className="flex h-full w-full items-center justify-center">
+        <div className="flex h-full min-h-svh w-full flex-col items-center justify-center gap-1 md:flex-row">
           <motion.div
             variants={fadeIn("right", 0.3)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex h-full w-full flex-1 items-center justify-center bg-center bg-no-repeat mix-blend-lighten"
-          >
-            <Image
-              src="/assets/about2.png"
-              width={0}
-              height={0}
-              sizes="100%"
-              className="h-full w-[300px] md:w-full"
-              style={{ objectFit: "cover" }}
-              alt="Picture of the author"
-            />
-          </motion.div>
+            className="flex h-[300px] w-full items-center justify-center bg-[url('/assets/about2.png')] bg-contain bg-center bg-no-repeat mix-blend-lighten md:h-[700px] md:flex-1 md:bg-cover md:bg-left"
+          ></motion.div>
           <motion.div
             variants={fadeIn("left", 0.5)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex h-full w-full flex-1 flex-col items-center justify-start gap-4 p-2 text-center md:items-start md:justify-center md:text-left"
+            className="mt-4 flex h-full w-full flex-1 flex-col items-center justify-start gap-4 p-2 text-center md:mt-0 md:items-start md:justify-center md:text-left"
           >
-            <h2 className="text-xl font-bold uppercase tracking-wide text-primary md:text-2xl lg:text-4xl">
+            <h2 className="text-2xl font-bold uppercase tracking-wide text-primary md:text-3xl lg:text-4xl">
               Sobre Mim
             </h2>
-            <h3 className="text-sm font-bold uppercase tracking-wide md:text-lg lg:text-xl">
+            <h3 className="text-sm font-bold uppercase tracking-wide md:text-base lg:text-xl">
               Eu sou um Trader técnico e consistente
             </h3>
             <p className="lg-text-base text-xs leading-5 md:text-sm">
@@ -90,7 +80,7 @@ export default function About() {
             >
               <Button
                 asChild
-                className="w-full max-w-[250px] cursor-pointer rounded-xl bg-gradient-to-r from-purple-900 via-purple-600 to-violet-600 font-bold uppercase text-white"
+                className="w-full max-w-[200px] cursor-pointer rounded-xl bg-gradient-to-r from-purple-900 via-purple-600 to-violet-600 font-bold uppercase text-white hover:from-violet-900 hover:to-purple-600"
               >
                 <Link to="contact" smooth={true} spy={true}>
                   Entre em Contato
