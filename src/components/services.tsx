@@ -51,7 +51,7 @@ export default function Services() {
       className="flex min-h-svh w-full flex-col items-center justify-center"
     >
       <div className="flex h-full w-full flex-col items-center justify-center">
-        <div className="flex h-[200px] w-full flex-col items-center justify-center gap-2 md:h-[300px]">
+        <div className="flex h-[200px] w-full flex-col items-center justify-center gap-2 md:h-[250px]">
           <motion.h2
             variants={fadeIn("down", 0.3)}
             initial="hidden"
