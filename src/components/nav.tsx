@@ -13,8 +13,8 @@ import { Link } from "react-scroll";
 const navigationLinks = [
   { label: "Inicio", path: "home", icon: Monitor },
   { label: "Sobre Mim", path: "about", icon: User },
-  { label: "Serviços", path: "services", icon: CandlestickChart },
-  { label: "Entradas", path: "work", icon: BookOpenCheck },
+  { label: "Entradas", path: "work", icon: CandlestickChart },
+  { label: "Serviços", path: "services", icon: BookOpenCheck },
   { label: "Alunos", path: "mentoring", icon: GraduationCap },
   { label: "Contato", path: "contact", icon: MessagesSquare },
 ];

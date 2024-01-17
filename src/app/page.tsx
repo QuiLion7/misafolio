@@ -13,8 +13,8 @@ export default function Home() {
         <Banner />
         <Nav />
         <About />
-        <Services />
         <Work />
+        <Services />
         <Mentoring />
         <Contact />
         <div className="h-[3000px]"></div>
