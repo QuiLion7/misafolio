@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 import { fadeIn } from "@/utils/variants";
 import { Button } from "./ui/button";
 import { Link } from "react-scroll";
-import Image from "next/image";
 
 export default function About() {
   const [ref, inView] = useInView({
